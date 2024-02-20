@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-eifb
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/pmacik-testing/tkrw-pr712-0075-0030-tenant/tkrw-pr712-0075-0030-app/devfile-sample-eifb@sha256:3b8034ab78e78733f4cd0e652adc2cbd6fbb9ba0d0f8f96d0d10cab14dbae1ea
+        name: my-nodejs
+        resources: {}
+status: {}
